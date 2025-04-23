@@ -7,15 +7,7 @@ Este repositório contém instruções para subir um container MySQL usando Dock
 Você pode rodar rapidamente um container MySQL utilizando o comando abaixo:
 
 ```
-docker run -d \
-  --name mysql-container \
-  -e MYSQL_ROOT_PASSWORD=rootpassword \
-  -e MYSQL_DATABASE=meu_banco \
-  -e MYSQL_USER=usuario \
-  -e MYSQL_PASSWORD=senha123 \
-  -p 3306:3306 \
-  -v mysql_data:/var/lib/mysql \
-  mysql:8.0
+docker run -d --name mysql-container -e MYSQL_ROOT_PASSWORD=rootpassword -e MYSQL_DATABASE=meu_banco -e MYSQL_USER=usuario -e MYSQL_PASSWORD=senha123 -p 3306:3306 -v mysql_data:/var/lib/mysql mysql:8.0
 ```
 
 ## Acessando o MySQL via terminal:
